@@ -1,4 +1,5 @@
 import BuilderDesignPattern.Director;
+import ObjectPoolDesignPattern.ObjectPoolClient;
 
 import java.util.Scanner;
 
@@ -10,6 +11,10 @@ public class Main {
         switch (usecase) {
             case 1:
                 Director.buildUserDTO();
+                break;
+
+            case 2:
+                ObjectPoolClient.getObjectPoolImplementation();
                 break;
         }
     }
